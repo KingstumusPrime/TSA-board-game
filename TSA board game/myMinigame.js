@@ -1,6 +1,7 @@
-function start(){
+function start(ctx){
     createPlayer();
     score = 0;
+    ctx = ctx;
 }
 
 function update(){
@@ -9,6 +10,7 @@ function update(){
     if(score == 1000){
         end();
     }
+    ctx.fillRect(0, 0, 10, 10); // drawing
 }
 
 function end(){
